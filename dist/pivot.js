@@ -360,7 +360,8 @@
               value: function() {
                 return this.inner.value() / data.getAggregator.apply(data, this.selector).inner.value();
               },
-              numInputs: wrapped.apply(null, x)().numInputs
+              numInputs: wrapped.apply(null, x)().numInputs,
+              canUseCascadeDropdown: wrapped.apply(null, x)().canUseCascadeDropdown
             };
           };
         };

@@ -145,6 +145,7 @@ callWithJQuery ($) ->
             format: formatter
             value: -> @inner.value() / data.getAggregator(@selector...).inner.value()
             numInputs: wrapped(x...)().numInputs
+            canUseCascadeDropdown: wrapped(x...)().canUseCascadeDropdown
 
     aggregatorTemplates.countUnique = (f) -> aggregatorTemplates.uniques(((x) -> x.length), f)
     aggregatorTemplates.listUnique =  (s) -> aggregatorTemplates.uniques(((x) -> x.sort(naturalSort).join(s)), ((x)->x))
